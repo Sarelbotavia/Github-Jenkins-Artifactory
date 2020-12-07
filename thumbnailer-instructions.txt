@@ -1,0 +1,81 @@
+Advanced Java CI using Gitlab, Classic Jenkins & Artifactory
+------------------------------------------------------------
+In this exercise you will 
+- build two separate projects:
+  -- image-io-extensions - extends Java ability to handle image formats
+  -- thumbnailer - creates thumbnails using imageio
+- Create the classic Java CI topology: Gitlab-Jenkins+maven-Artifactory
+- Create master-based CI for both projects
+- Improve thumbnailer by making it a dockerized app 
+- Release a new version of image-io-extensions, supporting tiff, to artifactory
+- Create a new version thumbnailer-docker which supports tiff by using image-io-extensions
+
+Here is your workplan:
+----------------------
+(1) Create a "developer" machine by pulling the maven docker image and running bash inside it
+- NOTE: you REALY want to map ~/.m2/repository to a volume you can re-use!
+(2) Copy the thumbnailer source projects inside and build each of them
+- Start with io-extensions, as app depends on io-extensions
+- io-extensions will need to pass mvn install, while app is OK with mvn verify. Make sure you understand why
+
+Checkpoint: Can you create thumbnails using thumbnailer? (Hint: thumbnailer.sh should be run from target) 
+Note that the thumbnailer version you built does not use io-extensions, thus it does not support the tiff format. You can see this if you try the examples directory.
+
+(3) Create the full "Build network" as a docker compose with:
+- Gitlab
+- Jenkins
+- Artifactory
+(4) Setup each of these servers:
+- Gitlab
+-- register user
+-- add ssh key
+-- create 2 repositories
+-- Push sources to 2 gitlab repositories
+- Jenkins
+-- Install Jenkins 
+-- Add maven Integration plugin
+-- Add config file provider plugin (so you can upload a settings.xml to integrate to Artifactory)
+-- configure JDK JAVA_HOME for Open JDK 8 (It is already on your image, you just need to locate it. Hint: see where java is run from)
+-- Add maven 3.6.2 tool
+-- Add credetials needed to connect to gitlab
+- Artifactory
+-- Install artifactory with a maven repository
+
+Checkpoint: Create a jenkins job that pulls imageio-extensions from gitlab and mvn installs it
+
+(5) Use artifactory UI to generate a "settings.xml" that allows upload to "libs-release-local" and "libs-snapshot-local". 
+(6) Use Jenkins config file provider to store this as a user maven settings file
+(7) Update your job to mvn deploy and to use the maven settings file
+
+Checkpoint: Your job successfully deploys artifacts into libs-snapshot
+
+(8) Implement 2 CI jobs:
+- image-io-extensions CI should mvn deploy upon push to master.
+- thumbnailer CI should mvn install upon push to master
+
+Checkpoint: Pushing changes to master performs build and deploy
+
+(9) Back in the developer machine, you are now required to Dockerize thumbnailer. Create a Dockerfile and entry-point.sh so that:
+- thumbnails are created during docker run
+- they are performed on all files found in /pics (typically a volume)
+- size of thumbnail can be set through environment variable TN_SIZE
+- default size is 150
+(10) make docker build part of "maven package" by adding the maven docker-file plugin
+- Read about it here: https://github.com/spotify/dockerfile-maven
+- plugins are added in the <plugins> section of the pom.xml. No need to download anything.
+
+Checkpoint: Run your docker image using the examples folder as input. JPEG should be thumbnailed, while tiff should not.
+
+(10) Create manual release job for image-io-extensions:
+(a) Should follw the release pattern we learned earlier
+(b) Versions are bumped in maven using "mvn version:set -DnewVersion=[YOUR-VERSION]"
+(11) Release Version 3.5
+
+Checkpoint: Version 3.5 appears in artifactory libs-release-local repository
+
+(11) Add dependency on image-io-extensions:3.5 to thumbnailer
+
+Checkpoint: CI should automatically create a new docker image which supports tiff. Try it on your examples folder
+
+
+

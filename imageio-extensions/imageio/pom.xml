@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>com.terrygilliam</groupId>
+        <artifactId>terrygilliam</artifactId>
+        <version>3.5-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.terrygilliam.imageio</groupId>
+    <artifactId>imageio</artifactId>
+    <packaging>pom</packaging>
+    <name>terrygilliam :: ImageIO</name>
+
+    <contributors>
+        <contributor>
+            <name>Harald Kuhr</name>
+            <email>harald.kuhr@gmail.com</email>
+            <roles>
+                <role>owner</role>
+                <role>developer</role>
+            </roles>
+        </contributor>
+    </contributors>
+
+    <modules>
+        <!-- Support -->
+        <module>imageio-core</module>
+        <module>imageio-metadata</module>
+
+        <!-- Stand-alone readers/writers -->
+        <module>imageio-jpeg</module>
+        <module>imageio-psd</module>
+        <module>imageio-tga</module>
+        <module>imageio-tiff</module>
+
+    </modules>
+
+    <properties>
+        <core.version>3.1-SNAPSHOT</core.version>
+        <imageio.core.version>3.1-SNAPSHOT</imageio.core.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.terrygilliam.common</groupId>
+            <artifactId>common-lang</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.terrygilliam.common</groupId>
+            <artifactId>common-io</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.terrygilliam.common</groupId>
+            <artifactId>common-image</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.terrygilliam.common</groupId>
+            <artifactId>common-lang</artifactId>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.terrygilliam.common</groupId>
+            <artifactId>common-io</artifactId>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.7</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.8.5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.terrygilliam.common</groupId>
+                <artifactId>common-lang</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.terrygilliam.common</groupId>
+                <artifactId>common-io</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.terrygilliam.common</groupId>
+                <artifactId>common-image</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>imageio-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+	        <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>imageio-metadata</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+	        <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>imageio-jpeg</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>imageio-core</artifactId>
+                <version>${project.version}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
