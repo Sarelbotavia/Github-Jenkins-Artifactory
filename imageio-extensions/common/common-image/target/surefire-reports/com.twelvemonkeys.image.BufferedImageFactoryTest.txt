@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.twelvemonkeys.image.BufferedImageFactoryTest
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.06 s - in com.twelvemonkeys.image.BufferedImageFactoryTest

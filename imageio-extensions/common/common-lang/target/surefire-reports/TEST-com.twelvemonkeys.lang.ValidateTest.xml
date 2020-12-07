@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.twelvemonkeys.lang.ValidateTest" time="0.017" tests="114" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/root/.m2/repository/org/apache/maven/surefire/surefire-booter/2.22.1/surefire-booter-2.22.1.jar:/root/.m2/repository/org/apache/maven/surefire/surefire-api/2.22.1/surefire-api-2.22.1.jar:/root/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.22.1/surefire-logger-api-2.22.1.jar:/usr/src/mymaven/imageio-extensions/common/common-lang/target/test-classes:/usr/src/mymaven/imageio-extensions/common/common-lang/target/classes:/root/.m2/repository/junit/junit/4.7/junit-4.7.jar:/root/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /usr/src/mymaven/imageio-extensions/common/common-lang/target/surefire 2020-12-07T18-44-08_162-jvmRun1 surefire1283581340439239489tmp surefire_0290525867989816728tmp"/>
+    <property name="surefire.test.class.path" value="/usr/src/mymaven/imageio-extensions/common/common-lang/target/test-classes:/usr/src/mymaven/imageio-extensions/common/common-lang/target/classes:/root/.m2/repository/junit/junit/4.7/junit-4.7.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/usr/src/mymaven/imageio-extensions/common/common-lang"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_121-8u121-b13-1~bpo8+1-b13"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-56-generic"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="user.dir" value="/usr/src/mymaven/imageio-extensions/common/common-lang"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testNotNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotNullNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotNullWithParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotNullWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotNullWithNullParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotNullWithNullParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCharSequence" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCharSequenceNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCharSequenceEmpty" classname="com.twelvemonkeys.lang.ValidateTest" time="0.001"/>
+  <testcase name="testNotEmptyCharSequenceOnlyWS" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCharSequenceNullWithParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCharSequenceEmptyWithParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCharSequenceOnlyWSWithParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCharSequenceWithParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCharSequenceWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCharSequenceNullWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCharSequenceEmptyWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0.001"/>
+  <testcase name="testNotEmptyCharSequenceOnlyWSWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyArray" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyArrayNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyArrayEmpty" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyArrayParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyArrayNullParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyArrayEmptyParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyArrayWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyArrayNullWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyArrayEmptyWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCollection" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCollectionNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCollectionEmpty" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCollectionParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0.001"/>
+  <testcase name="testNotEmptyCollectionNullParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCollectionEmptyParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCollectionWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCollectionNullWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyCollectionEmptyWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyMap" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyMapNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyMapEmpty" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyMapParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0.001"/>
+  <testcase name="testNotEmptyMapNullParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyMapEmptyParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyMapWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyMapNullWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNotEmptyMapEmptyWithParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArray" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayEmpty" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayNullElements" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayMixed" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayEmptyParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayNullParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayNullElementsParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0.001"/>
+  <testcase name="testNoNullElementsArrayMixedParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayEmptyParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayNullParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayNullElementsParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsArrayMixedParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollection" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionEmpty" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionNullElements" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionMixed" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionEmptyParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionNullParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionNullElementsParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionMixedParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionEmptyParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionNullParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionNullElementsParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullElementsCollectionMixedParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesMap" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesEmpty" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesNullElements" classname="com.twelvemonkeys.lang.ValidateTest" time="0.001"/>
+  <testcase name="testNoNullValuesMixed" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesEmptyParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesNullParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesNullElementsParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesMixedParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0.001"/>
+  <testcase name="testNoNullValuesEmptyParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesNullParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesNullElementsParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullValuesMixedParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysMap" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysEmpty" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysNullElements" classname="com.twelvemonkeys.lang.ValidateTest" time="0.001"/>
+  <testcase name="testNoNullKeysMixed" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysEmptyParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysNullParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysNullElementsParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysMixedParameter" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0.001"/>
+  <testcase name="testNoNullKeysEmptyParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysNullParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysNullElementsParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testNoNullKeysMixedParameterNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testIsTrue" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testIsTrueFalse" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testIsTrueFalseNullParam" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testIsTrueValue" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testIsTrueFalseValue" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testIsTrueValueParamNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testIsTrueFalseValueParamNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0.001"/>
+  <testcase name="testIsTrueValueNullParamNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+  <testcase name="testIsTrueFalseValueNullParamNull" classname="com.twelvemonkeys.lang.ValidateTest" time="0"/>
+</testsuite>

@@ -1,0 +1,9 @@
+step 1:
+
+docker run -it --name dev -v "$(pwd)":/usr/src/mymaven -v maven-repo:/root/.m2 maven:3.3-jdk-8 bash
+    cd /usr/src/mymaven/imageio-extensions
+    mvn install  // check if target created!
+    cd ../app
+    mvn verify
+    mv ./thumbnail.sh ./target/
+    ./thumbnail.sh 

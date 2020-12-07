@@ -1,0 +1,11 @@
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/RLEDecoder.java
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/TGAProviderInfo.java
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/TGAImageWriteParam.java
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/TGAImageReader.java
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/TGA.java
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/TGAImageWriterSpi.java
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/TGAHeader.java
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/TGAExtensions.java
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/TGAMetadata.java
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/TGAImageReaderSpi.java
+/usr/src/mymaven/imageio-extensions/imageio/imageio-tga/src/main/java/com/twelvemonkeys/imageio/plugins/tga/TGAImageWriter.java

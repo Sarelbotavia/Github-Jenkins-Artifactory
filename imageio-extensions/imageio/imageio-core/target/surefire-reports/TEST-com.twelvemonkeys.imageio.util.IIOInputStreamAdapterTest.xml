@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0.008" tests="31" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/root/.m2/repository/org/apache/maven/surefire/surefire-booter/2.22.1/surefire-booter-2.22.1.jar:/root/.m2/repository/org/apache/maven/surefire/surefire-api/2.22.1/surefire-api-2.22.1.jar:/root/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.22.1/surefire-logger-api-2.22.1.jar:/usr/src/mymaven/imageio-extensions/imageio/imageio-core/target/test-classes:/usr/src/mymaven/imageio-extensions/imageio/imageio-core/target/classes:/usr/src/mymaven/imageio-extensions/common/common-lang/target/terrygilliam-common-lang-3.5-SNAPSHOT.jar:/usr/src/mymaven/imageio-extensions/common/common-io/target/terrygilliam-common-io-3.5-SNAPSHOT.jar:/usr/src/mymaven/imageio-extensions/common/common-image/target/terrygilliam-common-image-3.5-SNAPSHOT.jar:/usr/src/mymaven/imageio-extensions/common/common-lang/target/terrygilliam-common-lang-3.5-SNAPSHOT-tests.jar:/usr/src/mymaven/imageio-extensions/common/common-io/target/terrygilliam-common-io-3.5-SNAPSHOT-tests.jar:/root/.m2/repository/junit/junit/4.7/junit-4.7.jar:/root/.m2/repository/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar:/root/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /usr/src/mymaven/imageio-extensions/imageio/imageio-core/target/surefire 2020-12-07T18-44-08_162-jvmRun1 surefire4318035198469157119tmp surefire_38366317445171521377tmp"/>
+    <property name="surefire.test.class.path" value="/usr/src/mymaven/imageio-extensions/imageio/imageio-core/target/test-classes:/usr/src/mymaven/imageio-extensions/imageio/imageio-core/target/classes:/usr/src/mymaven/imageio-extensions/common/common-lang/target/terrygilliam-common-lang-3.5-SNAPSHOT.jar:/usr/src/mymaven/imageio-extensions/common/common-io/target/terrygilliam-common-io-3.5-SNAPSHOT.jar:/usr/src/mymaven/imageio-extensions/common/common-image/target/terrygilliam-common-image-3.5-SNAPSHOT.jar:/usr/src/mymaven/imageio-extensions/common/common-lang/target/terrygilliam-common-lang-3.5-SNAPSHOT-tests.jar:/usr/src/mymaven/imageio-extensions/common/common-io/target/terrygilliam-common-io-3.5-SNAPSHOT-tests.jar:/root/.m2/repository/junit/junit/4.7/junit-4.7.jar:/root/.m2/repository/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/usr/src/mymaven/imageio-extensions/imageio/imageio-core"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_121-8u121-b13-1~bpo8+1-b13"/>
+    <property name="user.name" value="root"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-56-generic"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/root/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="user.dir" value="/usr/src/mymaven/imageio-extensions/imageio/imageio-core"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testCreateNull" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testReadSubstreamOpenEnd" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0.001"/>
+  <testcase name="testReadSubstream" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testReadSubstreamRepositionOnClose" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testSeekBeforeStreamNoEnd" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testSeekBeforeStream" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testRead" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testAvailable" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testReadByteArray" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testEOF" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testMarkResetUnsupported" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testResetNoMark" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testMarkReset" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testResetAfterReadLimit" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testResetAfterReset" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testSkip" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0.001"/>
+  <testcase name="testSanityOrdered" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testSanityOrdered2" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testSanityNegative" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testSanityNegative2" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testSanityRandom" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testSanityRandom2" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testToString" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testEqualsHashCode" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testEqualsNull" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testObjectEqualsSelf" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testObjectHashCodeEqualsSelfHashCode" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testObjectHashCodeEqualsContract" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testClone" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testSerializeDeserializeThenCompare" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+  <testcase name="testSimpleSerialization" classname="com.twelvemonkeys.imageio.util.IIOInputStreamAdapterTest" time="0"/>
+</testsuite>

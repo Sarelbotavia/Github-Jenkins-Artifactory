@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.twelvemonkeys.lang.PlatformTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.002 s - in com.twelvemonkeys.lang.PlatformTest
