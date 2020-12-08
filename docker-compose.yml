@@ -1,0 +1,47 @@
+version: "3.3"
+
+services: 
+
+  gitlab:
+    image: 'gitlab/gitlab-ce:latest' 
+    container_name: 'gitlab'
+    ports:
+      - '80:80'
+      - '22:22'
+    restart: always
+    volumes: 
+      - 'gitlab_config:/etc/gitlab'
+      - 'gitlab_logs:/var/log/gitlab'
+      - 'gitlab_data:/var/opt/gitlab'
+
+  jenkins:
+    build: .
+    container_name: 'jenkins'
+    ports: 
+      - '8080:8080'
+      - '5000:5000'
+    volumes: 
+      - 'jenkins_data:/var/jenkins_home'
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  artifactory:
+    image: docker.bintray.io/jfrog/artifactory-oss:latest
+    container_name: artifactory
+    ports:
+     - '8081:8081'
+     - '8082:8082'
+    restart: always
+    volumes:
+     - artifactory_data:/var/opt/jfrog/artifactory
+
+volumes:
+  gitlab_config:
+    external: true
+  gitlab_logs:
+    external: true
+  gitlab_data:
+    external: true
+  jenkins_data:
+    external: true
+  artifactory_data:
+    external: true
